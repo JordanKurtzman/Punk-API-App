@@ -1,0 +1,17 @@
+*{
+    padding: 0px;
+    margin: 0px;
+
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-gap: 1rem;
+}
+
+.header {
+    font-family: 'CF Punk Fashion';
+    color: pink;
+}
