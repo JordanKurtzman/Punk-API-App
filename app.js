@@ -6,6 +6,8 @@ const mellowButton = document.querySelector("#mellow-button")
 const mellowButtonArea = document.querySelector("#mellow-button-area")
 const bitterButton = document.querySelector('#bitter-button')
 const bitterButtonArea = document.querySelector('#bitter-button-area')
+const randomButton = document.querySelector('#random-button')
+const randomButtonArea = document.querySelector('#random-button-area')
 
 nameSearchTextInput.addEventListener('change', (e) => {
     showByName.innerHTML = ''
@@ -54,3 +56,16 @@ bitterButton.addEventListener('click', (e) => {
         console.log(error)
     })
 })
+
+randomButton.addEventListener('click', (e) => {
+    randomButtonArea.innerHTML = ''
+    randomBeer().then((data) => {
+        const html = data.map((beer) => {
+            return `<p>Name: ${beer.name}, Tagline: ${beer.tagline}, Description: ${beer.description}`
+        })
+        randomButtonArea.insertAdjacentHTML('afterbegin', `<p>${html}</p>`)
+    }).catch((error) => {
+        console.log(error)
+    })
+})
+

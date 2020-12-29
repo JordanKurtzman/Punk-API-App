@@ -26,3 +26,9 @@ const searchBitterBeers = async () => {
     } else throw new Error('Unable to fetch data')
 }
 
+const randomBeer = async () => {
+    const response = await fetch('https://api.punkapi.com/v2/beers/random')
+    if(response.status === 200){
+        return data = response.json()
+    } else throw new Error('Unable to fetch data')
+}
