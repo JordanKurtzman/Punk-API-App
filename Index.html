@@ -7,30 +7,30 @@
 </head>
 <body>
     <header class="header">
-        <h1>Search for Beers with the <a href="https://punkapi.com/documentation/v2">Punk API</a></h1>
+        <h1>Search for Beers with the <a href="https://punkapi.com/documentation/v2" class="link">Punk API</a></h1>
     </header>
     <div class="grid">
-       <div>
+       <div id="by-name" class="grid-piece">
             <label>Search for beer by name:</label><input type="text" id="search-by-name">
             <div id="show-by-name"></div>
        </div> 
-       <div>
+       <div id="by-food" class="grid-piece">
             <label>Search for beer by food pairing:</label><input type="text" id="search-by-food-pairing">
             <div id="show-by-food-pairing"></div>
        </div>
-       <div>
+       <div id="mellow" class="grid-piece">
             <button id="mellow-button">Get a list of mellow beers (IBU < 20)</button>
             <div id="mellow-button-area"></div>
        </div>
-       <div>
+       <div id="bitter" class="grid-piece">
             <button id="bitter-button">Get a list of of hoppy, bitter beers (IBU > 70)</button>
             <div id="bitter-button-area"></div>
        </div>
-       <div>
+       <div id="random" class="grid-piece">
             <button id="random-button">Surprise me!</button>
             <div id="random-button-area"></div>
        </div>
-       <div>
+       <div id="support-link" class="grid-piece">
            Support the <a href="https://punkapi.com/documentation/v2">Punk API</a>
        </div>
     </div>
