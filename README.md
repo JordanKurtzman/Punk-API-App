@@ -1,2 +1,2 @@
 #BeerApp
-Here's a little fun project I made with vanilla JS and the [link](https://punkapi.com/documentation/v2).
+Here's a little fun project I made with vanilla JS and the [Punk API](https://punkapi.com/documentation/v2).
