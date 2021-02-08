@@ -1,0 +1,26 @@
+.btn {
+    background-color: $color-white;
+    border: none;
+    font-family: 'Lato', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 1rem;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+    display: inline-block;
+    transition: all .2s;
+    outline: none;
+    cursor: pointer;
+    &:hover{
+        transform: translateY(-3px);
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
+    }
+    &:active{
+        transform: translateY(-1px);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+        outline: none;
+    }
+    @include resize(wide){
+        font-size: 1.6rem;
+    }
+}

@@ -1,0 +1,36 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    /*10px percentage of default 16px font size */
+    @include respond(phone) {
+        font-size: 35%;
+    }
+   
+    
+    @include respond(tab-port) {
+        font-size: 40%;
+    }
+    
+    @include respond (tab-land) {
+        font-size: 48%;
+    }
+
+}
+
+body{
+    background-image: linear-gradient(to right bottom, rgba($color-light-grey, .6), rgba($color-dark-grey, .6)),
+    url('/images/beer.jpg');
+    background-size: cover;
+    background-position: top;
+    height: 100%;
+    padding-top: 4rem;
+    box-sizing: border-box;
+    overflow: auto;
+}

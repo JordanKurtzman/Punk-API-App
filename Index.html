@@ -1,43 +1,64 @@
 <!DOCTYPE html>
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Roboto:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link href="/css/main.css" rel="stylesheet">
     <title>
         Beer app
     </title>
-    <link href="styles.css" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
-        <h1>Search for Beers with the <a href="https://punkapi.com/documentation/v2" class="link">Punk API</a></h1>
-    </header>
-    <div class="grid">
-       <div id="by-name" class="grid-piece">
-            <label>Search for beer by name:</label><input type="text" id="search-by-name">
-            <div id="show-by-name"></div>
-       </div> 
-       <div id="by-food" class="grid-piece">
-            <label>Search for beer by food pairing:</label><input type="text" id="search-by-food-pairing">
-            <div id="show-by-food-pairing"></div>
-       </div>
-       <div id="mellow" class="grid-piece">
-            <button id="mellow-button">Get a list of mellow beers (IBU < 20)</button>
-            <div id="mellow-button-area"></div>
-       </div>
-       <div id="bitter" class="grid-piece">
-            <button id="bitter-button">Get a list of of hoppy, bitter beers (IBU > 70)</button>
-            <div id="bitter-button-area"></div>
-       </div>
-       <div id="random" class="grid-piece">
-            <button id="random-button">Surprise me!</button>
-            <div id="random-button-area"></div>
-       </div>
-       <div id="support-link" class="grid-piece">
-           Support the <a href="https://punkapi.com/documentation/v2">Punk API</a>
-       </div>
-    </div>
+    <div class="wrapper">
+
     
-    <script src="requests.js"></script>
-    <script src="app.js"></script>
+    <header class="header">
+        <h1 class="header__text">Search for Beers with the <a href="https://punkapi.com/documentation/v2" class="header-link">Punk API</a></h1>
+    </header>
+    
+        <div class="container">
+            
+                <div id="by-name" class="container__tile">
+                    <label>Search for beer by name:</label><input type="text" id="search-by-name" class="input">
+                    <div id="show-by-name"></div>
+                </div>
+                <div id="by-food" class="container__tile">
+                    <label>Search for beer by food pairing:</label><input type="text" id="search-by-food-pairing" class="input">
+                    <div id="show-by-food-pairing"></div>
+                </div>
+           
+
+            
+                <div id="mellow" class="container__tile">
+                    <button id="mellow-button" class="btn">Get a list of mellow beers (IBU < 20)</button>
+                            <div id="mellow-button-area"></div>
+                </div>
+                <div id="bitter" class="container__tile">
+                    <button id="bitter-button" class="btn">Get a list of of hoppy, bitter beers (IBU > 70)</button>
+                    <div id="bitter-button-area"></div>
+                </div>
+                <div id="random" class="container__tile">
+                    <button id="random-button" class="btn">Surprise me!</button>
+                    <div id="random-button-area"></div>
+                </div>
+                <div id="support-link" class="container__tile">
+                    <ion-icon name="beer-sharp"></ion-icon> Support the <a href="https://punkapi.com/documentation/v2" class="container__tile--link">Punk API</a>
+                </div>
+         
+            
+            
+            
+        </div>
+
+    
+</div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="/scripts/requests.js"></script>
+    <script src="/scripts/app.js"></script>
     
  
-    
+
 </body>

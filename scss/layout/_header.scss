@@ -1,0 +1,39 @@
+.header {
+    font-family: 'Audiowide';
+    color:#49fb35;
+    background-color: black;
+    z-index: 1;
+    font-size: 3rem;
+    line-height: 5rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 2.5rem;
+    display: inline-block;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .4);;
+    &__text{
+        animation-name: slideInTitle;
+        animation-duration: .7s;
+        transition: all ease-out;
+    }
+    @include resize(wide){
+        font-size: 2rem;
+    }
+    @include resize(mid){
+        font-size: 1.5rem;
+    }
+    @include resize(skinny){
+        font-size: 1rem;
+    }
+    @include respond(tab-port){
+        font-size: 2rem;
+    }
+    
+    &-link{
+        text-decoration: none;
+        color: inherit;
+    }
+    &-link:hover{
+        color: $color-neon-pink;
+    }
+}

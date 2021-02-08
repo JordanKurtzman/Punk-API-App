@@ -1,0 +1,66 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 2rem;
+    margin-top: 10rem;
+    
+    @include respond(phone){
+        margin-top: 12rem;
+    }
+    &__tile{
+        font-family: 'Lato', sans-serif;
+        display: block;
+        font-size: 2rem;
+        line-height: 2.5rem;
+        font-weight: 700;
+        padding: 2rem;
+        border-radius: 5px;
+        height: 24vh;
+        overflow-y: scroll;
+        @include respond(tab-port){
+            grid-column: span 2;
+        }
+        @include resize(mid){
+            grid-column: span 2;
+            font-size: 1.6rem;
+        }
+
+        &--link{
+            text-decoration: none;
+            color: inherit;
+        }
+        &--link:hover{
+            color: $color-lime;
+        }
+        
+    }
+    
+}
+
+#by-name {
+    background-color: $color-blue;
+}
+
+#by-food {
+    background-color: $color-lime;
+}
+
+#mellow {
+    background-color: $color-purple;
+}
+
+#bitter {
+    background-color: $color-orange;
+}
+
+#random {
+    background-color: $color-aqua;
+}
+
+#support-link {
+    background-color: $color-neon-pink;
+}

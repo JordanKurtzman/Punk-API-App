@@ -1,0 +1,19 @@
+{
+  "name": "beer-app",
+  "version": "1.0.0",
+  "description": "Here's a little fun project I made with vanilla JS and the [Punk API](https://punkapi.com/documentation/v2).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JordanKurtzman/Punk-API-App.git"
+  },
+  "author": "Jordan Kurtzman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JordanKurtzman/Punk-API-App/issues"
+  },
+  "homepage": "https://github.com/JordanKurtzman/Punk-API-App#readme"
+}
