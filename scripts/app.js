@@ -9,6 +9,10 @@ const bitterButtonArea = document.querySelector('#bitter-button-area')
 const randomButton = document.querySelector('#random-button')
 const randomButtonArea = document.querySelector('#random-button-area')
 
+
+
+
+
 nameSearchTextInput.addEventListener('change', (e) => {
     showByName.innerHTML = ''
     searchBeerByName(e.target.value).then((result) => {
@@ -19,6 +23,7 @@ nameSearchTextInput.addEventListener('change', (e) => {
             return `<div class="beerlist">${name}</div><div class="collapsible-content"><div class="beerlist__tagline"><span class="beerlist__heading">Tagline:</span> ${tagline}</div><div class="beerlist__description"><span class="beerlist__heading">Description:</span> ${description}</div></div>`
         }).join('')
         showByName.insertAdjacentHTML('afterbegin', `<div>${html}</div>`)
+        
     }).catch((error) => {
         console.log(error)
     })

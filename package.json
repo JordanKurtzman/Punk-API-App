@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/JordanKurtzman/Punk-API-App/issues"
   },
-  "homepage": "https://github.com/JordanKurtzman/Punk-API-App#readme"
+  "homepage": "https://github.com/JordanKurtzman/Punk-API-App#readme",
+  "dependencies": {
+    "overlayscrollbars": "^1.13.1"
+  }
 }

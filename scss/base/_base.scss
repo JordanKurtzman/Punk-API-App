@@ -21,6 +21,7 @@ html {
     @include respond (tab-land) {
         font-size: 48%;
     }
+    
 
 }
 
@@ -33,4 +34,7 @@ body{
     padding-top: 4rem;
     box-sizing: border-box;
     overflow: auto;
+
 }
+
+
