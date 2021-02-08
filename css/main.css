@@ -175,8 +175,8 @@ body {
 .header__text {
   -webkit-animation-name: slideInTitle;
           animation-name: slideInTitle;
-  -webkit-animation-duration: .7s;
-          animation-duration: .7s;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
   -webkit-transition: all ease-out;
   transition: all ease-out;
 }

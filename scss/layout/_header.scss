@@ -13,7 +13,7 @@
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, .4);;
     &__text{
         animation-name: slideInTitle;
-        animation-duration: .7s;
+        animation-duration: 1s;
         transition: all ease-out;
     }
     @include resize(wide){
